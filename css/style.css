@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+html {
+    font-size: 62.5%;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    background-color: #F6E7D8;
+}
+
+/* Aquí inicia codigo header */
+
+header {
+    background-color: #F68989;
+    font-size: 1.5rem;
+    color: brown;
+    display: flex;
+    width: 100%;
+    height: 12rem;
+    justify-content: space-around;
+}
+
+header a {
+    text-decoration: none;
+    color: brown;
+}
+
+.nav-item {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    /* display: inline-block;
+    margin: 0px 5px; */
+}
+
+.header-logo {
+    display: flex;
+    /* display: inline-block;*/
+}
+
+.header-logo-texto {
+    display: flex;
+    /* display: inline-block; */
+}
+
+.header-navbar {
+    display: flex;
+    width: 60%;
+    /* display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    bottom: 40px; */
+}
+
+.header-navbar-ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:450px) {
+    header{
+        font-size: 1rem;
+    }
+    .header-logo-texto{
+        display: none;
+    }
+    .header-logo{
+        height: 10rem;
+        width: auto;
+    }
+}
+
+/* Aquí finaliza codigo header */
+
+
+/*Aqui inicia codigo main */
+/*Inicio Index*/
+main {
+    color: brown;
+    font-size: 2rem;
+    /* background-image: url(../imagenes/cafe-fondo-prueba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.index-align {
+    text-align: center;
+}
+
+.section-presentacion {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-presentacion img{
+    width: 100%;
+}
+
+.section-presentacion p {
+    background-color: #f68989d2;
+    position: absolute;
+    width: 70%;
+    margin-top: 20%;
+}
+
+.section-libros {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-libros img {
+    width: 100%;
+}
+
+.section-libros p {
+    background-color: #f68989d2;
+    position: absolute;
+    width: 70%;
+    margin-top: 20%;
+}
+
+.section-cafe {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-cafe img {
+    width: 100%;
+}
+
+.section-cafe p {
+    background-color: #f68989d2;
+    position: absolute;
+    width: 70%;
+    margin-top: 20%;
+}
+
+h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 10px ;
+}
+
+/*Fin Index*/
+/*Inicio nosotros*/
+.div-h2-nosotros {
+    background-color: #ffa3a3;
+    width: 50%;
+    margin: 40px auto;
+}
+
+.h2-nosotros {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.div-nosotros-content-img {
+    background-color:#ffa3a3;
+    width: 60%;
+    margin: 0px auto 40px auto;
+    padding: 0;
+}
+
+.div-nosotros-content-p {
+    background-color:#ffa3a3;
+    width: 60%;
+    margin: auto;
+}
+
+.div-nosotros-content-p p{
+    line-height: 1.6;
+    width: 80%;
+    position: relative;
+    left: 30%;
+}
+
+.div-nosotros-content-img img {
+    position: relative;
+    right: 10%;
+
+} 
+
+/*Fin nosotros*/
+/*Inicio Menu*/
+.div-h2-menu {
+    background-color: #ffa3a3;
+    width: 50%;
+    margin: 40px auto;
+}
+
+.h2-menu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.div-menu-padre{
+    background-color: #ffa3a3;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.div-menu-hijo-1 {
+    background-color: #F6E7D8;
+    display: inline-block;
+    margin: 10px 20%;
+}
+
+.div-menu-hijo-2 {
+    background-color:#F6E7D8;
+    display: inline-block;
+    margin: 10px 20%;
+}
+
+.menu-item {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.menu-bebida{
+    display: inline-block;
+}
+
+.menu-comida{
+    display: inline-block;
+}
+
+.menu-precio{ 
+    display: inline-block;
+}
+
+.main-menu-bebida{
+    display: inline-block;
+    margin: 10px 20%;
+}
+
+.main-menu-comida{
+    display: inline-block;
+    margin: 10px 10%
+}
+
+/*Fin Menu*/
+/*Inicio libros*/
+.div-libros {
+    background-color: #ffa3a3;
+    width: 50%;
+    margin: 4rem auto;
+}
+
+.h2-libros {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.img-novedades{
+    width: 20%;
+    display: inline-block;
+}
+
+.h3-libros {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.img-galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 500px;
+    gap: 2rem;
+}
+
+.img-catalogo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galery-titulo {
+    position: absolute;
+    bottom: 0;
+    background-color: #f68989d2 ;
+    width: 100%;
+    padding: 1rem 0rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.item-galeria{
+    position: relative;
+}
+
+.grid-recomendaciones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Para visualizacion personal de las areas
+
+.item-recomendaciones{
+    border: solid red 3px;
+}
+
+.item-recomendaciones iframe{
+    border: solid black 3px;
+} 
+*/
+
+.div-h4-recomendaciones {
+    background-color: #ffa3a3;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.h4-recomendaciones {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+@media (max-width:450px) {
+    .h2-libros{
+        font-size: 1.5rem;
+    }
+
+    .h3-libros{
+        font-size: 1.5rem;
+    }
+
+    .h4-recomendaciones{
+        font-size: 1.5rem;
+    }
+
+    .img-galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+        gap: 1rem;
+    }
+    .galery-titulo {
+        font-size: 1rem;
+    }
+
+    .img-catalogo{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .grid-recomendaciones{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .grid-recomendaciones{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .item-recomendaciones-iframe{
+        width: 100%;
+    }
+    
+    iframe {
+        width: 100% ;
+    }
+}
+
+/*Fin libros*/
+/*Inicio Ubicacion*/
+
+.div-contacto {
+    background-color: #ffa3a3;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.div-ubicacion{
+    margin: 10px 5%;
+}
+
+.div-formulario{
+    margin: 10px 5%;
+}
+
+/*Fin Ubicación*/
+/*Aqui finaliza codigo main */
+
+/* Aquí inicia codigo footer */
+footer { 
+    width: 100%;
+    height: 140px;
+    background-color: #F68989;
+    font-size: 1.5rem;
+    color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-span-ubicacion {
+    display: flex;
+    align-items: center;
+}
+
+.ubicacion-img{
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.footer-span-wpp{
+    display: flex;
+    align-items: center;
+}
+
+.footer-span-wpp img {
+    width: 5rem;
+    margin-left: 1rem;
+}
+
+.footer-span-insta{
+    display: flex;
+    align-items: center;
+}
+
+.footer-span-insta img {
+    width: 5rem; 
+    margin-left: 1rem;
+}
+
+@media (max-width:450px) {
+    footer {
+        font-size: 1rem
+    };
+}
+
+/* Aquí finaliza codigo footer */
