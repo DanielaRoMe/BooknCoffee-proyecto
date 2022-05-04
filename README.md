@@ -1,6 +1,5 @@
 # BooknCoffee-proyecto
 <h1 align="center">Hi 👋, I'm Daniela Rodriguez Meyer</h1>
-<h3 align="center">Currently learning about programming</h3>
 
 - 🔭 I’m currently working on **BooknCoffee-proyecto**
 
