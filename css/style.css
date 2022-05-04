@@ -11,7 +11,9 @@ html {
 }
 
 body {
-    background-color: #F6E7D8;
+    /* background-color: #F6E7D8; */
+    background: rgb(240,195,151);
+    background: linear-gradient(180deg, rgba(240,195,151,1) 8%, rgba(193,130,70,1) 60%, rgba(157,78,0,1) 100%);
 }
 
 /* Aquí inicia codigo header */
@@ -110,6 +112,12 @@ main {
     position: absolute;
     width: 70%;
     margin-top: 20%;
+    transition: all 1.5s;
+}
+
+.section-animacion:hover{
+    transform: scale(1.2);
+    transition: all 1.5s;
 }
 
 .section-libros {
@@ -127,6 +135,7 @@ main {
     position: absolute;
     width: 70%;
     margin-top: 20%;
+    transition: all 1.5s;
 }
 
 .section-cafe {
@@ -144,6 +153,7 @@ main {
     position: absolute;
     width: 70%;
     margin-top: 20%;
+    transition: all 1.5s;
 }
 
 h3 {
