@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagenes/coffee-logo.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+    <!-- Libreria -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Nosotros/Books'n'Coffee</title>
 </head>
@@ -14,75 +20,117 @@
 <body>
 
     <header>
-        <img src="../imagenes/coffee-logo.png" alt="Cafe logo" class="header-logo">
-        <img src="../imagenes/cafe-logo-texto.png" alt="Books and coffee" class="header-logo-texto">
-        <nav class="header-navbar">
-            <ul class="header-navbar-ul">
-                <li class="nav-item"> <a href="../index.html"> Inicio </a> </li>
-                
-                <li class="nav-item"> <a href="nosotros.html"> Nosotros </a> </li>
-
-                <li class="nav-item"> <a href="menu.html"> Menu </a> </li>
-
-                <li class="nav-item"> <a href="libros.html"> Libros </a>
-                  
-                    <ul class="header-navbar-ul">
-                        <li class="nav-item">  <a href="libros.html#novedades">Novedades del Mes</a> </li>
-                        
-                        <li class="nav-item"> <a href="libros.html#catalogo">Catálogo</a> </li>
-                        
-                        <li class="nav-item"> <a href="libros.html#recomendaciones">Recomendaciones</a> </li>
+        <nav class="navbar navbar-expand-lg header-navbar">
+            <div class="container-fluid">
+                <img src="../imagenes/coffee-logo.png" alt="Cafe logo" class="header-logo">
+                <a class="navbar-brand" href="../index.html"><img src="../imagenes/cafe-logo-texto.png"
+                        alt="Books and coffee" class="header-logo-texto"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-div" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item li-item">
+                            <a class="nav-link color-a" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item li-item">
+                            <a class="nav-link color-a" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item li-item">
+                            <a class="nav-link color-a" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item dropdown li-item">
+                            <a class="nav-link dropdown-toggle color-a" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Libros
+                            </a>
+                            <ul class="dropdown-menu submenu-edit" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item color-a" href="libros.html#novedades">Novedades del Mes</a>
+                                </li>
+                                <li><a class="dropdown-item color-a" href="libros.html#catalogo">Catálogo</a></li>
+                                <li><a class="dropdown-item color-a" href="libros.html#recomendaciones">Recomendaciones</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown li-item">
+                            <a class="nav-link dropdown-toggle color-a" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Contacto
+                            </a>
+                            <ul class="dropdown-menu submenu-edit" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item color-a" href="#redes">Redes</a></li>
+                                <li><a class="dropdown-item color-a" href="ubicacion.html">Ubicación</a></li>
+                            </ul>
+                        </li>
                     </ul>
-
-                </li>
-
-                <li class="nav-item"> Contacto
-
-                    <ul class="header-navbar-ul">
-                        <li class="nav-item"> <a href="#redes">Redes</a> </li>
-
-                        <li class="nav-item"> <a href="ubicacion.html">Ubicación</a> </li>
-                    </ul>
-
-                </li>
-            </ul>
-
+                </div>
+            </div>
         </nav>
-        
+
     </header>
 
     <main>
 
-        <div class="div-h2-nosotros"> <h2 class="h2-nosotros">Un poco sobre nosotros...</h2> </div>
-
-        <div class="div-nosotros-content-p">
-            <p class="div-nostros-content-p"> Books'n'Coffee nace de dos pasiones, pero no solo eso, sino también del deseo de compartirlo con una comunidad que tambien disfruta de un buen libro y una buena taza de café. Aquí encontraras todo tipo de lecturas, desde clásicos de la literatura a lecturas más modernas y siempre estamos abiertos a recomendaciones de modo que cada vez que vengan haya algo nuevo para leer.</p>
-        </div>
-
-        <div class="div-nosotros-content-img">
-            <img src="../imagenes/book-n-coffee.jpg" alt="Nuestra tienda">
+        <div class="div-h2-nosotros" data-aos="flip-up" >
+            <h2 class="h2-nosotros">Un poco sobre nosotros...</h2>
         </div>
         
-    </main>
+        <div class="container-fluid edit-container">
+            <div class="row">
+
+                <div class="col-med-6">
+                    <p class="nostros-p"> Books'n'Coffee nace de dos pasiones, pero no solo eso, sino también del
+                        deseo de compartirlo con una comunidad que tambien disfruta de un buen libro y una buena taza de café.
+                        Aquí encontraras todo tipo de lecturas, desde clásicos de la literatura a lecturas más modernas y
+                        siempre estamos abiertos a recomendaciones de modo que cada vez que vengan haya algo nuevo para leer.
+                    </p>
+                </div>
+
+                <div class="col-med-6">
+                    <img src="../imagenes/book-n-coffee.jpg" alt="Nuestra tienda">
+                </div>
+               
+            </div>
     
+        </div>
+    
+
+    </main>
+
     <footer id="redes">
-       
+
         <span class="footer-span-ubicacion">
-            <img src="../imagenes/ubicacion.png" alt="Ubicacion">
+            <img src="../imagenes/ubicacion.png" alt="Ubicacion" class="ubicacion-img">
             <p> Gorlero entre calle 17 y 19, Punta del Este, Uruguay </p>
         </span>
 
         <span class="footer-span-wpp">
             <p class="donde"> (+598) XX XXX XXX </p>
             <img src="../imagenes/whatsapp-logo-removebg-preview.png" alt="WhatsApp">
-        </span> 
+        </span>
 
         <span class="footer-span-insta">
+            <p>@Cofee'n'Books</p>
             <a href="https://www.google.com" target="_blank">
                 <img src="../imagenes/instagram-logo-removebg-preview.png" alt="Instagram">
             </a>
         </span>
 
     </footer>
+    <!-- Script JS Libreria -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

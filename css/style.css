@@ -48,6 +48,27 @@ body {
     justify-content: center;
 }
 
+.color-a{
+    color: brown;
+}
+
+.color-a:hover{
+    background-color: #f86c6c;
+    color: brown;
+}
+
+.color-a:link{
+    color: brown;
+}
+
+.carrusel-index-size{
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.img-index-size{
+    object-fit: fill;
+}
 /* Aquí finaliza codigo header */
 
 
@@ -58,7 +79,15 @@ h5 {
     color: brown;
     font-size: 2rem;
     font-family: 'Merriweather', serif;
+}
 
+@media (min-width:451px) and (max-width:960px){
+    h5{ font-size: 1.5rem;}
+}
+
+@media (max-width:450px){
+    h5 {font-size: 1rem;
+    }
 }
 
 /*Fin Index*/
@@ -70,36 +99,24 @@ h5 {
 }
 
 .h2-nosotros {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-family: 'Merriweather', serif;
+    color: brown;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     text-align: center;
 }
 
-.div-nosotros-content-img {
-    background-color:#ffa3a3;
-    width: 60%;
-    margin: 0px auto 40px auto;
-    padding: 0;
-}
-
-.div-nosotros-content-p {
-    background-color:#ffa3a3;
-    width: 60%;
-    margin: auto;
-}
-
-.div-nosotros-content-p p{
-    line-height: 1.6;
+.edit-container{
+    background-color: #F68989;
     width: 80%;
-    position: relative;
-    left: 30%;
+    margin: 2rem auto;
 }
 
-.div-nosotros-content-img img {
-    position: relative;
-    right: 10%;
-
-} 
+.nosotros-p{
+    font-family: 'Merriweather', serif;
+    color: brown;
+    font-size: 2rem;
+}
 
 /*Fin nosotros*/
 /*Inicio Menu*/
@@ -217,16 +234,10 @@ h5 {
     align-items: center;
 }
 
-/* Para visualizacion personal de las areas
-
-.item-recomendaciones{
-    border: solid red 3px;
+.carrusel-libros-size{
+    width: 30%;
+    margin: 0 auto;
 }
-
-.item-recomendaciones iframe{
-    border: solid black 3px;
-} 
-*/
 
 .div-h4-recomendaciones {
     background-color: #ffa3a3;
@@ -238,6 +249,57 @@ h5 {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+}
+
+@media (min-width:451px) and (max-width:960px) {
+    .h2-libros{
+        font-size: 1.5rem;
+    }
+
+    .h3-libros{
+        font-size: 1.5rem;
+    }
+
+    .h4-recomendaciones{
+        font-size: 1.5rem;
+    }
+
+    .img-galeria{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 200px;
+        gap: 1rem;
+    }
+    .galery-titulo {
+        font-size: 1rem;
+    }
+
+    .img-catalogo{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .grid-recomendaciones{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .grid-recomendaciones{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .item-recomendaciones-iframe{
+        width: 100%;
+    }
+    
+    iframe {
+        width: 100% ;
+    }
 }
 
 @media (max-width:450px) {
@@ -255,7 +317,7 @@ h5 {
 
     .img-galeria{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
         grid-auto-rows: 200px;
         gap: 1rem;
     }
@@ -313,50 +375,81 @@ h5 {
 
 /* Aquí inicia codigo footer */
 footer { 
-    width: 100%;
-    height: 140px;
     background-color: #F68989;
     font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
     color: brown;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+        "ubicacion ubicacion wpp"
+        "ubicacion ubicacion insta";
 }
 
 .footer-span-ubicacion {
+    grid-area: ubicacion;
     display: flex;
     align-items: center;
-}
 
+}
 .ubicacion-img{
     width: 5rem;
     margin-right: 1rem;
 }
 
 .footer-span-wpp{
+    grid-area: wpp;
     display: flex;
     align-items: center;
+    justify-content: end;
 }
-
 .footer-span-wpp img {
     width: 5rem;
     margin-left: 1rem;
 }
 
 .footer-span-insta{
+    grid-area: insta;
     display: flex;
     align-items: center;
+    justify-content: end;
 }
-
 .footer-span-insta img {
     width: 5rem; 
     margin-left: 1rem;
 }
 
+@media (min-width:451px) and (max-width:960px){
+    footer {
+        font-size: 1rem;
+    }
+    .ubicacion-img{
+        width: 4em;
+    }
+    .footer-span-wpp img {
+        width: 4rem;
+    }
+    .footer-span-insta img {
+        width: 4rem; 
+    }
+}
+
 @media (max-width:450px) {
     footer {
-        font-size: 1rem
-    };
+        font-size: 1rem;
+    }
+    .ubicacion-img{
+        width: 2rem;
+    }
+    .footer-span-wpp img {
+        width: 2rem;
+    }
+    .footer-span-insta img {
+        width: 2rem; 
+    }
+
+
 }
 
 /* Aquí finaliza codigo footer */
