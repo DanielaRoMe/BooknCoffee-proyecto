@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* background-color: #F6E7D8; */
+    background: rgb(240,195,151);
+    background: linear-gradient(180deg, rgba(240,195,151,1) 8%, rgba(193,130,70,1) 60%, rgba(157,78,0,1) 100%);
+}
+
+/* Aquí inicia codigo header */
+
+.header-navbar {
+    background-color: #F68989;
+}
+
+.li-item {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem; 
+    margin-left: 5rem;
+}
+
+.header-logo {
+   width: 8vw;
+   height: auto;
+}
+
+.header-logo-texto {
+    width: 20vw;
+    height: auto;
+} 
+
+.submenu-edit{
+    background-color: #F68989;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.nav-div{
+    justify-content: center;
+}
+
+.color-a{
+    color: brown;
+}
+
+.color-a:hover{
+    background-color: #f86c6c;
+    color: brown;
+}
+
+.color-a:link{
+    color: brown;
+}
+
+.carrusel-index-size{
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.img-index-size{
+    object-fit: fill;
+}
+/* Aquí finaliza codigo header */
+
+
+/*Aqui inicia codigo main */
+/*Inicio Index*/
+h5 {
+    background-color: #f68989d2;
+    color: brown;
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+}
+
+@media (min-width:451px) and (max-width:960px){
+    h5{ font-size: 1.5rem;}
+}
+
+@media (max-width:450px){
+    h5 {font-size: 1rem;
+    }
+}
+
+/*Fin Index*/
+/*Inicio nosotros*/
+.div-h2-nosotros {
+    background-color: #ffa3a3;
+    width: 50%;
+    margin: 40px auto;
+}
+
+.h2-nosotros {
+    font-family: 'Merriweather', serif;
+    color: brown;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.edit-container{
+    background-color: #F68989;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.nosotros-p{
+    font-family: 'Merriweather', serif;
+    color: brown;
+    font-size: 2rem;
+}
+
+/*Fin nosotros*/
+/*Inicio Menu*/
+.div-h2-menu {
+    background-color: #ffa3a3;
+    width: 50%;
+    margin: 40px auto;
+}
+
+.h2-menu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.div-menu-padre{
+    background-color: #ffa3a3;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.div-menu-hijo-1 {
+    background-color: #F6E7D8;
+    display: inline-block;
+    margin: 10px 20%;
+}
+
+.div-menu-hijo-2 {
+    background-color:#F6E7D8;
+    display: inline-block;
+    margin: 10px 20%;
+}
+
+.menu-item {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.menu-bebida{
+    display: inline-block;
+}
+
+.menu-comida{
+    display: inline-block;
+}
+
+.menu-precio{ 
+    display: inline-block;
+}
+
+.main-menu-bebida{
+    display: inline-block;
+    margin: 10px 20%;
+}
+
+.main-menu-comida{
+    display: inline-block;
+    margin: 10px 10%
+}
+
+/*Fin Menu*/
+/*Inicio libros*/
+.div-libros {
+    background-color: #ffa3a3;
+    width: 50%;
+    margin: 4rem auto;
+}
+
+.h2-libros {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+
+.h3-libros {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.img-galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 500px;
+    gap: 2rem;
+}
+
+.img-catalogo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galery-titulo {
+    position: absolute;
+    bottom: 0;
+    background-color: #f68989d2 ;
+    width: 100%;
+    padding: 1rem 0rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.item-galeria{
+    position: relative;
+}
+
+.grid-recomendaciones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px;
+    gap: 2rem;
+    align-items: center;
+}
+
+.carrusel-libros-size{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.div-h4-recomendaciones {
+    background-color: #ffa3a3;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.h4-recomendaciones {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+@media (min-width:451px) and (max-width:960px) {
+    .h2-libros{
+        font-size: 1.5rem;
+    }
+
+    .h3-libros{
+        font-size: 1.5rem;
+    }
+
+    .h4-recomendaciones{
+        font-size: 1.5rem;
+    }
+
+    .img-galeria{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 200px;
+        gap: 1rem;
+    }
+    .galery-titulo {
+        font-size: 1rem;
+    }
+
+    .img-catalogo{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .grid-recomendaciones{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .grid-recomendaciones{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .item-recomendaciones-iframe{
+        width: 100%;
+    }
+    
+    iframe {
+        width: 100% ;
+    }
+}
+
+@media (max-width:450px) {
+    .h2-libros{
+        font-size: 1.5rem;
+    }
+
+    .h3-libros{
+        font-size: 1.5rem;
+    }
+
+    .h4-recomendaciones{
+        font-size: 1.5rem;
+    }
+
+    .img-galeria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 200px;
+        gap: 1rem;
+    }
+    .galery-titulo {
+        font-size: 1rem;
+    }
+
+    .img-catalogo{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .grid-recomendaciones{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .grid-recomendaciones{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .item-recomendaciones-iframe{
+        width: 100%;
+    }
+    
+    iframe {
+        width: 100% ;
+    }
+}
+
+/*Fin libros*/
+/*Inicio Ubicacion*/
+
+.div-contacto {
+    background-color: #ffa3a3;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.div-ubicacion{
+    margin: 10px 5%;
+}
+
+.div-formulario{
+    margin: 10px 5%;
+}
+
+/*Fin Ubicación*/
+/*Aqui finaliza codigo main */
+
+/* Aquí inicia codigo footer */
+footer { 
+    background-color: #F68989;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+    color: brown;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+        "ubicacion ubicacion wpp"
+        "ubicacion ubicacion insta";
+}
+
+.footer-span-ubicacion {
+    grid-area: ubicacion;
+    display: flex;
+    align-items: center;
+
+}
+.ubicacion-img{
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.footer-span-wpp{
+    grid-area: wpp;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.footer-span-wpp img {
+    width: 5rem;
+    margin-left: 1rem;
+}
+
+.footer-span-insta{
+    grid-area: insta;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.footer-span-insta img {
+    width: 5rem; 
+    margin-left: 1rem;
+}
+
+@media (min-width:451px) and (max-width:960px){
+    footer {
+        font-size: 1rem;
+    }
+    .ubicacion-img{
+        width: 4em;
+    }
+    .footer-span-wpp img {
+        width: 4rem;
+    }
+    .footer-span-insta img {
+        width: 4rem; 
+    }
+}
+
+@media (max-width:450px) {
+    footer {
+        font-size: 1rem;
+    }
+    .ubicacion-img{
+        width: 2rem;
+    }
+    .footer-span-wpp img {
+        width: 2rem;
+    }
+    .footer-span-insta img {
+        width: 2rem; 
+    }
+
+
+}
+
+/* Aquí finaliza codigo footer */

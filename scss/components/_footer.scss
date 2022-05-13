@@ -1,0 +1,68 @@
+/*Footer*/
+@import '../base/listas';
+
+footer {
+	background-color: nth($colores,2);
+	font-size: nth($font-size, 2);
+	font-family: 'Merriweather', serif;
+	color: nth($colores, 1 );
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(2,1fr);
+	grid-template-areas: 
+        "ubicacion ubicacion wpp"
+        "ubicacion ubicacion insta";
+    @media (min-width:451px) and (max-width:960px){
+        font-size: 1rem;
+    }
+    @media (max-width:450px){
+        font-size: 1rem;
+    }
+}
+.footer-span-ubicacion {
+	grid-area: ubicacion;
+	display: flex;
+	align-items: center;
+}
+.ubicacion-img {
+	width: 5rem;
+	margin-right: 1rem;
+    @media (min-width:451px) and (max-width:960px){
+        width: 4rem;
+    }
+    @media (max-width:450px){
+        width: 2rem;
+    }
+}
+.footer-span-wpp {
+	grid-area: wpp;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	img {
+		width: 5rem;
+		margin-left: 1rem;
+        @media (min-width:451px) and (max-width:960px){
+            width: 4rem;
+        }
+        @media (max-width:450px){
+            width: 2rem;
+        }
+	}
+}
+.footer-span-insta {
+	grid-area: insta;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	img {
+		width: 5rem;
+		margin-left: 1rem;
+	}
+    @media (min-width:451px) and (max-width:960px){
+        width: 4rem;
+    }
+    @media (max-width:450px){
+        width: 2rem;
+    }
+}

@@ -1,0 +1,43 @@
+/*Header*/
+
+.header-navbar {
+	background-color: #F68989;
+}
+.li-item {
+	font-family: 'Merriweather', serif;
+	font-size: 2rem;
+	margin-left: 5rem;
+}
+.header-logo {
+	width: 8vw;
+	height: auto;
+}
+.header-logo-texto {
+	width: 20vw;
+	height: auto;
+}
+.submenu-edit {
+	background-color: #F68989;
+	border: none;
+	font-size: 1.5rem;
+}
+.nav-div {
+	justify-content: center;
+}
+.color-a {
+	color: brown;
+	&:hover {
+		background-color: #f86c6c;
+		color: brown;
+	}
+	&:link {
+		color: brown;
+	}
+}
+.carrusel-index-size {
+	width: 80%;
+	margin: 5rem auto;
+}
+.img-index-size {
+	object-fit: fill;
+}

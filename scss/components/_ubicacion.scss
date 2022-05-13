@@ -1,0 +1,20 @@
+/*Ubicacion*/
+
+@import '../base/listas';
+
+.div-contacto {
+    background-color: nth($colores,2);
+    width: 90%;
+    margin: 20px auto;
+    font-family: 'Merriweather', serif;
+    font-size: nth($font-size, 3);
+    color: nth($colores,1);
+}
+
+.div-ubicacion{
+    margin: 10px 5%;
+}
+
+.div-formulario{
+    margin: 10px 5%;
+}

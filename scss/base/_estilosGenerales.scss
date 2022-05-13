@@ -1,0 +1,16 @@
+/*Formateo general*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    background: rgb(240,195,151);
+    background: linear-gradient(180deg, rgba(240,195,151,1) 8%, rgba(193,130,70,1) 60%, rgba(157,78,0,1) 100%);
+}
