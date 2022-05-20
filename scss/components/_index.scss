@@ -1,0 +1,17 @@
+/*Index*/
+@import '../base/mapas';
+@import '../base/responsive';
+@import '../base/listas';
+
+h5{
+    background-color: map-get($titles, bg-color);
+    font-size: map-get($titles, size);
+    font-family: map-get($titles, font);
+    color: map-get($titles, color);
+    @include mobile {
+        font-size: nth($font-size, 1);
+    }
+    @include tablet {
+        font-size: nth($font-size, 2);
+    }
+}

@@ -46,7 +46,7 @@ body {
 }
 
 .color-a {
-  color: brown;
+  color: brown !important;
 }
 .color-a:hover {
   background-color: #f86c6c;
@@ -150,6 +150,24 @@ footer {
   }
 }
 
+/*Index*/
+h5 {
+  background-color: rgba(246, 137, 137, 0.8235294118);
+  font-size: 2rem;
+  font-family: "Merriweather";
+  color: brown;
+}
+@media (max-width: 450px) {
+  h5 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 451px) and (max-width: 960px) {
+  h5 {
+    font-size: 1.5rem;
+  }
+}
+
 /*Ubicacion*/
 .div-contacto {
   background-color: #F68989;
@@ -166,6 +184,33 @@ footer {
 
 .div-formulario {
   margin: 10px 5%;
+}
+
+/*Libros*/
+.div-libros {
+  background-color: #ffa3a3;
+  width: 50%;
+  margin: 4rem auto;
+}
+
+.h3-libros, .h2-libros {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.h2-libros {
+  background-color: rgba(246, 137, 137, 0.8235294118);
+  font-size: 2rem;
+  font-family: "Merriweather";
+  color: brown;
+}
+
+.h3-libros {
+  background-color: rgba(246, 137, 137, 0.8235294118);
+  font-size: 2rem;
+  font-family: "Merriweather";
+  color: brown;
 }
 
 /*# sourceMappingURL=style.css.map */

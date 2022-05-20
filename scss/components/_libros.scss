@@ -1,0 +1,22 @@
+/*Libros*/
+@import '../base/extend';
+
+.div-libros{
+    @extend %bg-titles;
+}
+
+.h2-libros{
+    @extend %titles-align;
+    background-color: map-get($titles, bg-color);
+    font-size: map-get($titles, size);
+    font-family: map-get($titles, font);
+    color: map-get($titles, color);
+}
+
+.h3-libros{
+    @extend %titles-align;
+    background-color: map-get($titles, bg-color);
+    font-size: map-get($titles, size);
+    font-family: map-get($titles, font);
+    color: map-get($titles, color);
+}

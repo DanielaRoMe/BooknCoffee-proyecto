@@ -25,7 +25,7 @@
 	justify-content: center;
 }
 .color-a {
-	color: brown;
+	color: brown !important;
 	&:hover {
 		background-color: #f86c6c;
 		color: brown;
