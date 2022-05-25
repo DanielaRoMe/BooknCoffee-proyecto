@@ -15,3 +15,12 @@ h5{
         font-size: nth($font-size, 2);
     }
 }
+
+.carrusel-index-size{
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.img-index-size{
+    object-fit: fill;
+}

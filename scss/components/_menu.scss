@@ -1,0 +1,44 @@
+/*Menu*/
+@import '../base/extend';
+
+.div-h2-menu{
+    @extend %bg-titles;
+}
+
+.h2-menu{
+    @extend %titles-align;
+    background-color: map-get($titles, bg-color);
+    font-size: map-get($titles, size);
+    font-family: map-get($titles, font);
+    color: map-get($titles, color);
+}
+
+.edit-menu-container{
+    background-color: nth($colores,4);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: map-get($titles, font);
+    color: map-get($titles, color);
+    font-size: nth($font-size, 2);
+}
+
+
+.menu-item{
+    list-style-type: none;
+}
+.menu-bebida-lista-1{
+    text-align: end;
+}
+.menu-bebida-lista-2{
+    text-align: start;
+}
+.menu-comida-lista-1{
+    text-align: end;
+}
+.menu-comida-lista-2{
+    text-align: start;
+}
+    

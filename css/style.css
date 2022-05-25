@@ -140,12 +140,12 @@ footer {
   margin-left: 1rem;
 }
 @media (min-width: 451px) and (max-width: 960px) {
-  .footer-span-insta {
+  .footer-span-insta img {
     width: 4rem;
   }
 }
 @media (max-width: 450px) {
-  .footer-span-insta {
+  .footer-span-insta img {
     width: 2rem;
   }
 }
@@ -168,6 +168,15 @@ h5 {
   }
 }
 
+.carrusel-index-size {
+  width: 80%;
+  margin: 5rem auto;
+}
+
+.img-index-size {
+  object-fit: fill;
+}
+
 /*Ubicacion*/
 .div-contacto {
   background-color: #F68989;
@@ -187,13 +196,13 @@ h5 {
 }
 
 /*Libros*/
-.div-libros {
+.div-h2-menu, .div-h2-nosotros, .div-libros {
   background-color: #ffa3a3;
   width: 50%;
   margin: 4rem auto;
 }
 
-.h3-libros, .h2-libros {
+.h2-menu, .h2-nosotros, .h3-libros, .h2-libros {
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
@@ -211,6 +220,150 @@ h5 {
   font-size: 2rem;
   font-family: "Merriweather";
   color: brown;
+}
+
+.carrusel-libros-size {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.img-galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 500px;
+  gap: 2rem;
+}
+
+.img-catalogo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-galeria {
+  position: relative;
+}
+
+/*Nosotros*/
+.div-h2-menu, .div-h2-nosotros, .div-libros {
+  background-color: #ffa3a3;
+  width: 50%;
+  margin: 4rem auto;
+}
+
+.h2-menu, .h2-nosotros, .h2-libros, .h3-libros {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.h2-nosotros {
+  background-color: rgba(246, 137, 137, 0.8235294118);
+  font-size: 2rem;
+  font-family: "Merriweather";
+  color: brown;
+}
+
+.edit-container {
+  background-color: rgba(246, 137, 137, 0.8235294118);
+  margin: 2rem auto;
+  width: 80%;
+  display: flex;
+}
+
+.nosotros-p {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  color: brown;
+  width: 80%;
+}
+@media (min-width: 451px) and (max-width: 960px) {
+  .nosotros-p {
+    font-size: 1.5rem;
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .nosotros-p {
+    font-size: 1rem;
+    width: 50%;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 960px) {
+  .div-nosotros-img-size {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .div-nosotros-img-size {
+    width: 50%;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 960px) {
+  .div-nosotros-img-size img {
+    width: 50%;
+    object-fit: fill;
+  }
+}
+@media (max-width: 450px) {
+  .div-nosotros-img-size img {
+    width: 50%;
+    object-fit: contain;
+  }
+}
+
+/*Menu*/
+.div-h2-menu, .div-libros, .div-h2-nosotros {
+  background-color: #ffa3a3;
+  width: 50%;
+  margin: 4rem auto;
+}
+
+.h2-menu, .h2-libros, .h3-libros, .h2-nosotros {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.h2-menu {
+  background-color: rgba(246, 137, 137, 0.8235294118);
+  font-size: 2rem;
+  font-family: "Merriweather";
+  color: brown;
+}
+
+.edit-menu-container {
+  background-color: rgba(246, 137, 137, 0.8235294118);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  font-family: "Merriweather";
+  color: brown;
+  font-size: 1.5rem;
+}
+
+.menu-item {
+  list-style-type: none;
+}
+
+.menu-bebida-lista-1 {
+  text-align: end;
+}
+
+.menu-bebida-lista-2 {
+  text-align: start;
+}
+
+.menu-comida-lista-1 {
+  text-align: end;
+}
+
+.menu-comida-lista-2 {
+  text-align: start;
 }
 
 /*# sourceMappingURL=style.css.map */

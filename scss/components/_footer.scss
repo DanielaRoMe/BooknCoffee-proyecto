@@ -58,11 +58,11 @@ footer {
 	img {
 		width: 5rem;
 		margin-left: 1rem;
+		@media (min-width:451px) and (max-width:960px){
+			width: 4rem;
+		}
+		@media (max-width:450px){
+			width: 2rem;
+		}
 	}
-    @media (min-width:451px) and (max-width:960px){
-        width: 4rem;
-    }
-    @media (max-width:450px){
-        width: 2rem;
-    }
 }
