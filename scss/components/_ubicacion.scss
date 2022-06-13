@@ -1,6 +1,7 @@
 /*Ubicacion*/
 
 @import '../base/listas';
+@import '../base/responsive';
 
 .div-contacto {
     background-color: nth($colores,2);
@@ -9,12 +10,40 @@
     font-family: 'Merriweather', serif;
     font-size: nth($font-size, 3);
     color: nth($colores,1);
-}
+    @include mobile{
+        font-size: nth($font-size, 1);
+    }
+    @include tablet{
+        font-size: nth($font-size, 2);
+    }
 
-.div-ubicacion{
-    margin: 10px 5%;
 }
 
 .div-formulario{
-    margin: 10px 5%;
+    margin-top: 3rem;
+    @include mobile{
+        font-size: nth($font-size, 1);
+    }
+    @include tablet{
+        font-size: nth($font-size, 2);
+    }
+}
+
+.map-size{
+    width: 40vw;
+    height: 80vh;
+    @include mobile{
+        width: 85vw;
+        height: auto;
+    }
+    @include intermidiate{
+        width: 87vw;
+        height: auto;
+    }
+}
+
+.button-edit{
+    background-color: #f86c6c;
+	border: solid brown 1px;
+	font-size: 1.5rem; 
 }

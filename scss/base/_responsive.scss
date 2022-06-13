@@ -4,6 +4,12 @@
     }
 }
 
+@mixin intermidiate {
+    @media (min-width: 451px) and (max-width:767px){
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (min-width:451px) and (max-width:960px){
         @content;

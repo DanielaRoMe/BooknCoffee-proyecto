@@ -15,6 +15,18 @@ body {
 }
 
 /*Header*/
+.div-h2-menu, .div-h2-nosotros, .div-libros {
+  background-color: #ffa3a3;
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.h2-menu, .h2-nosotros, .h4-recomendaciones, .h3-libros, .h2-libros {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
 .header-navbar {
   background-color: #F68989;
 }
@@ -23,6 +35,16 @@ body {
   font-family: "Merriweather", serif;
   font-size: 2rem;
   margin-left: 5rem;
+}
+@media (min-width: 451px) and (max-width: 960px) {
+  .li-item {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .li-item {
+    font-size: 1rem;
+  }
 }
 
 .header-logo {
@@ -39,6 +61,16 @@ body {
   background-color: #F68989;
   border: none;
   font-size: 1.5rem;
+}
+@media (min-width: 451px) and (max-width: 960px) {
+  .submenu-edit {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  .submenu-edit {
+    font-size: 1rem;
+  }
 }
 
 .nav-div {
@@ -186,23 +218,62 @@ h5 {
   font-size: 2rem;
   color: brown;
 }
-
-.div-ubicacion {
-  margin: 10px 5%;
+@media (max-width: 450px) {
+  .div-contacto {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 451px) and (max-width: 960px) {
+  .div-contacto {
+    font-size: 1.5rem;
+  }
 }
 
 .div-formulario {
-  margin: 10px 5%;
+  margin-top: 3rem;
+}
+@media (max-width: 450px) {
+  .div-formulario {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 451px) and (max-width: 960px) {
+  .div-formulario {
+    font-size: 1.5rem;
+  }
+}
+
+.map-size {
+  width: 40vw;
+  height: 80vh;
+}
+@media (max-width: 450px) {
+  .map-size {
+    width: 85vw;
+    height: auto;
+  }
+}
+@media (min-width: 451px) and (max-width: 767px) {
+  .map-size {
+    width: 87vw;
+    height: auto;
+  }
+}
+
+.button-edit {
+  background-color: #f86c6c;
+  border: solid brown 1px;
+  font-size: 1.5rem;
 }
 
 /*Libros*/
 .div-h2-menu, .div-h2-nosotros, .div-libros {
   background-color: #ffa3a3;
   width: 50%;
-  margin: 4rem auto;
+  margin: 2rem auto;
 }
 
-.h2-menu, .h2-nosotros, .h3-libros, .h2-libros {
+.h2-menu, .h2-nosotros, .h4-recomendaciones, .h3-libros, .h2-libros {
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
@@ -214,6 +285,16 @@ h5 {
   font-family: "Merriweather";
   color: brown;
 }
+@media (min-width: 451px) and (max-width: 960px) {
+  .h2-libros {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .h2-libros {
+    font-size: 1rem;
+  }
+}
 
 .h3-libros {
   background-color: rgba(246, 137, 137, 0.8235294118);
@@ -221,37 +302,121 @@ h5 {
   font-family: "Merriweather";
   color: brown;
 }
+@media (min-width: 451px) and (max-width: 960px) {
+  .h3-libros {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .h3-libros {
+    font-size: 1rem;
+  }
+}
 
 .carrusel-libros-size {
   width: 30%;
   margin: 0 auto;
 }
+@media (min-width: 451px) and (max-width: 960px) {
+  .carrusel-libros-size {
+    width: 40%;
+  }
+}
+@media (max-width: 450px) {
+  .carrusel-libros-size {
+    width: 50%;
+  }
+}
 
 .img-galeria {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 500px;
-  gap: 2rem;
+  grid-auto-rows: 25vw;
+  gap: 4rem;
+}
+@media (min-width: 451px) and (max-width: 960px) {
+  .img-galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 40vw;
+    gap: 3rem;
+  }
+}
+@media (max-width: 450px) {
+  .img-galeria {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 60vw;
+    gap: 1rem;
+  }
 }
 
 .img-catalogo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .item-galeria {
   position: relative;
 }
 
+.galery-titulo {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(246, 137, 137, 0.8235294118);
+  width: 100%;
+  padding: 1rem 0rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: brown;
+}
+@media (min-width: 451px) and (max-width: 960px) {
+  .galery-titulo {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  .galery-titulo {
+    font-size: 1rem;
+  }
+}
+
+.h4-recomendaciones {
+  background-color: rgba(246, 137, 137, 0.8235294118);
+  font-size: 2rem;
+  font-family: "Merriweather";
+  color: brown;
+}
+@media (min-width: 451px) and (max-width: 960px) {
+  .h4-recomendaciones {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .h4-recomendaciones {
+    font-size: 1rem;
+  }
+}
+
+.recomendaciones-iframe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.video-size {
+  width: 100vw;
+  height: 50vh;
+}
+
 /*Nosotros*/
 .div-h2-menu, .div-h2-nosotros, .div-libros {
   background-color: #ffa3a3;
   width: 50%;
-  margin: 4rem auto;
+  margin: 2rem auto;
 }
 
-.h2-menu, .h2-nosotros, .h2-libros, .h3-libros {
+.h2-menu, .h2-nosotros, .h2-libros, .h3-libros, .h4-recomendaciones {
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
@@ -263,65 +428,55 @@ h5 {
   font-family: "Merriweather";
   color: brown;
 }
+@media (max-width: 450px) {
+  .h2-nosotros {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 451px) and (max-width: 960px) {
+  .h2-nosotros {
+    font-size: 1.5rem;
+  }
+}
 
 .edit-container {
   background-color: rgba(246, 137, 137, 0.8235294118);
   margin: 2rem auto;
   width: 80%;
   display: flex;
+  padding: 1rem;
 }
 
 .nosotros-p {
   font-family: "Merriweather", serif;
   font-size: 2rem;
   color: brown;
-  width: 80%;
 }
 @media (min-width: 451px) and (max-width: 960px) {
   .nosotros-p {
     font-size: 1.5rem;
-    width: 50%;
   }
 }
 @media (max-width: 450px) {
   .nosotros-p {
     font-size: 1rem;
-    width: 50%;
   }
 }
 
-@media (min-width: 451px) and (max-width: 960px) {
-  .div-nosotros-img-size {
-    width: 50%;
-  }
-}
-@media (max-width: 450px) {
-  .div-nosotros-img-size {
-    width: 50%;
-  }
-}
-
-@media (min-width: 451px) and (max-width: 960px) {
-  .div-nosotros-img-size img {
-    width: 50%;
-    object-fit: fill;
-  }
-}
-@media (max-width: 450px) {
-  .div-nosotros-img-size img {
-    width: 50%;
-    object-fit: contain;
-  }
+.nosotros-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*Menu*/
 .div-h2-menu, .div-libros, .div-h2-nosotros {
   background-color: #ffa3a3;
   width: 50%;
-  margin: 4rem auto;
+  margin: 2rem auto;
 }
 
-.h2-menu, .h2-libros, .h3-libros, .h2-nosotros {
+.h2-menu, .h2-libros, .h3-libros, .h4-recomendaciones, .h2-nosotros {
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
@@ -332,6 +487,16 @@ h5 {
   font-size: 2rem;
   font-family: "Merriweather";
   color: brown;
+}
+@media (min-width: 451px) and (max-width: 960px) {
+  .h2-menu {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .h2-menu {
+    font-size: 1.5rem;
+  }
 }
 
 .edit-menu-container {
@@ -345,6 +510,16 @@ h5 {
   color: brown;
   font-size: 1.5rem;
 }
+@media (min-width: 451px) and (max-width: 960px) {
+  .edit-menu-container {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .edit-menu-container {
+    font-size: 1rem;
+  }
+}
 
 .menu-item {
   list-style-type: none;
@@ -352,18 +527,22 @@ h5 {
 
 .menu-bebida-lista-1 {
   text-align: end;
+  width: 50%;
 }
 
 .menu-bebida-lista-2 {
   text-align: start;
+  width: 50%;
 }
 
 .menu-comida-lista-1 {
   text-align: end;
+  width: 50%;
 }
 
 .menu-comida-lista-2 {
   text-align: start;
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

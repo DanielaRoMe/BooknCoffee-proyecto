@@ -1,5 +1,7 @@
 /*Libros*/
 @import '../base/extend';
+@import '../base/responsive';
+@import '../base/listas';
 
 .div-libros{
     @extend %bg-titles;
@@ -11,6 +13,12 @@
     font-size: map-get($titles, size);
     font-family: map-get($titles, font);
     color: map-get($titles, color);
+    @include tablet{
+        font-size: nth($font-size,2);
+    }
+    @include mobile{
+        font-size: nth($font-size,1);
+    }
 }
 
 .h3-libros{
@@ -19,23 +27,89 @@
     font-size: map-get($titles, size);
     font-family: map-get($titles, font);
     color: map-get($titles, color);
+    @include tablet{
+        font-size: nth($font-size,2);
+    }
+    @include mobile{
+        font-size: nth($font-size,1);
+    }
 }
 .carrusel-libros-size{
     width: 30%;
     margin: 0 auto;
+    @include tablet{
+        width: 40%;
+    }
+    @include mobile{
+        width: 50%;
+    }
 }
+
 .img-galeria{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 500px;
-    gap: 2rem;
+    grid-auto-rows: 25vw;
+    gap: 4rem;
+    @include tablet{
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 40vw;
+        gap: 3rem;
+    }
+    @include mobile{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 60vw;
+        gap: 1rem;
+    }
 }
 .img-catalogo{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .item-galeria{
     position: relative;
+}
+
+.galery-titulo{
+    position: absolute;
+    bottom: 0;
+    background-color: #f68989d2 ;
+    width: 100%;
+    padding: 1rem 0rem;
+    font-size: nth($font-size,2);
+    text-align: center;
+    color: nth($colores,1);
+    @include tablet{
+        font-size: nth($font-size,1);
+    }
+    @include mobile{
+        font-size: nth($font-size,1);
+    }
+}
+
+.h4-recomendaciones{
+    @extend %titles-align;
+    background-color: map-get($titles, bg-color);
+    font-size: map-get($titles, size);
+    font-family: map-get($titles, font);
+    color: map-get($titles, color);
+    @include tablet{
+        font-size: nth($font-size,2);
+    }
+    @include mobile{
+        font-size: nth($font-size,1);
+    }
+}
+
+.recomendaciones-iframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.video-size{
+    width: 100vw;
+    height: 50vh;
 }
